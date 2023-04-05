@@ -1,0 +1,539 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+header {
+    width: 100%;
+    padding-top: 10%;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero {
+    background-image: url("./assets/tablet/image-hero.png");
+    width: 112%;
+    height: 40vh;
+    margin-left: -6%;
+    padding-top: 20%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-bottom: -4rem;
+}
+
+.hero-desktop {
+    display: none;
+    width: 112%;
+    height: 40vh;
+    margin-left: -6%;
+    padding-top: 20%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-bottom: -4rem;
+}
+
+.img-hero {
+    display:none;
+}
+
+/* Call To Action*/
+
+.callaction {
+    padding: 10%;
+    text-align: center;
+}
+
+.call-title {
+    color: #28283D;
+    font-size: 2.5rem;
+    text-align: center;
+    
+}
+
+.call-parag {
+    color: #87879D;
+    text-align: center;
+    font-size: 0.835rem;
+    padding-top: 1.575rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+}
+
+.btn-download {
+    width: 12rem;
+    height: 3.625rem;
+    background-color: #4D96A9;
+    color: #FFFFFF;
+    font-weight: 900;
+    border: none;
+    border-radius: 3.125rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+
+}
+
+.btn-download strong.version {
+    color: #8FE3F9;
+    margin-left: 0.1rem;
+
+}
+
+.btn-what {
+    width: 8rem;
+    height: 3.625rem;
+    border-radius: 3.125rem;
+    background-color:#855FB1;
+    color: #FFFFFF;
+    font-weight: 900;
+    border: none;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+/* Section 1*/
+
+.section1 {
+    height: 100vh;
+}
+/* Images */
+.images-board {
+    padding-top: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Define 3 colunas com a mesma largura */
+    grid-template-rows: auto auto;
+    grid-gap: 1.2rem;
+
+
+}
+
+.grid-container .img-board {
+   width: 100%;
+   border-radius: 5%;
+}
+
+/* Article */
+
+.article {
+    padding: 2rem;
+    text-align: center;
+}
+
+.article .p-overline {
+    color: #4D96A9;
+    font-weight: 900;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 5%;
+}
+
+.article .subtitle {
+    color: #28283D;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.article .p-about {
+    width: 101%;
+    padding-top: 8%;
+    color: #87879D;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+
+}
+
+
+/* Footer */
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 25.7rem;
+    background-image: url("./assets/mobile/image-footer.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: normal;
+    z-index: 1;
+
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4D96A9;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.footer-info {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+footer .title-footer {
+    color: #FAFAFA;
+    font-weight: 900;
+    text-align: center;
+    font-size: 2rem;
+}
+
+footer .p-footer {
+    color: #FAFAFA;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.125rem;
+    padding-top: 2rem;
+
+}
+
+footer .v2 {
+    background-color: #855FB1;
+    margin-top: 10%;
+}
+
+footer .version2 {
+    color: #D9B8FF;
+    
+}
+
+/* Tablet */
+
+@media (min-width: 576px) {
+    .hero {
+            background-image: url("./assets/tablet/image-hero.png");
+            width: 106%;
+            height: 40vh;
+            margin-left: -3%;
+            padding-top: 20%;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            margin-bottom: -4rem;
+    }
+
+    .call-title {
+        font-size: 3.5rem;
+    }
+
+    .call-parag {
+        font-size: 1.4rem;
+   
+    }
+
+    .btn-download {
+        width: 12rem;
+        height: 4rem;
+        margin-top: 2rem;
+        margin-right: 4rem;
+        font-size: 1rem;
+        
+    }
+
+    .btn-what {
+        width: 10rem;
+        height: 4rem;
+        font-size: 1rem;
+    }
+
+    .section1 {
+        height: 70vh;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    
+
+    .article {
+        padding: -12rem;
+        text-align: center;
+    }
+    
+
+    .article .p-overline {
+        font-size: 1.5rem;
+    }
+
+    .article .subtitle {
+   
+        font-size: 3rem;
+    }
+
+    .article .p-about {
+        padding-top: 6%;
+        font-size: 1.3rem;
+    
+    }
+
+    footer {
+        position: relative;
+        width: 100%;
+        height: 61vh;
+        background-image: url("./assets/tablet/image-footer.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-blend-mode: normal;
+        z-index: 1;
+        object-fit: contain;
+    
+    }
+
+    footer::before {
+        content: "";
+        position: absolute;
+        top: 0%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #4D96A9;
+        opacity: 0.8;
+        z-index: -1;
+    }
+
+    .footer-info {
+        padding: 8rem 5rem;
+        text-align: center;
+    }
+    footer .title-footer {
+        color: #FAFAFA;
+        font-weight: 900;
+        text-align: center;
+        font-size: 3rem;
+    }
+    
+    footer .p-footer {
+        color: #FAFAFA;
+        font-weight: 500;
+        text-align: center;
+        font-size: 1.2rem;
+        padding-top: 2rem;
+    
+    }
+
+
+    footer .v2 {
+        background-color: #855FB1;
+        margin-top: 10%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-size: 1.150rem;
+ 
+    }
+    
+
+
+}
+
+
+
+/*Desktop*/
+
+@media (min-width: 1200px) {
+
+   
+
+
+    .hero {
+      
+        background-image: url("./assets/desktop/image-hero-left.png"), url("./assets/desktop/image-hero-right.png");
+        background-position: left, right;
+        background-size: contain;
+        margin-left: -3rem;
+        height: 30vh;
+        
+    }
+
+    .callaction {
+        margin-top: -30rem;
+        padding: 10rem 30rem; 
+    }
+
+    .call-title {
+        padding: 3rem 1rem 0rem 1rem;
+        font-size: 4rem;
+    }
+
+
+    .call-parag {
+        width: 100%;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .btn-download {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        cursor: pointer;
+        margin: 1rem 15rem 0rem 3rem;
+    }
+
+    .btn-download:hover {
+        
+        background-color: #71C0D4;
+    }
+
+    .btn-what {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        width: 80%;
+        cursor: pointer;
+        margin: 1rem 15rem 0rem 3rem;
+    }
+
+    .btn-what:hover {
+        background-color: #B18BDD;
+    }
+
+    .section1 {
+        height: 125vh;
+    }
+
+    .images-board {
+        padding: 10rem;
+    }
+
+
+    .grid-container {
+
+        grid-gap: 2rem;
+    
+    
+    }
+
+    .article .p-overline {
+        margin-bottom: 1%;
+    }
+
+    .article .p-about {
+        padding: 4rem 30rem;
+
+    }
+
+
+    footer {
+        position: relative;
+        width: 100%;
+        height: 40vh;
+        background-image: url("./assets/desktop/image-footer.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-blend-mode: normal;
+        z-index: 1;
+        object-fit: contain;
+        display: flex;
+       
+    }
+
+    footer::before {
+        content: "";
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        width: 100%;
+        background-color: #4D96A9;
+        opacity: 0.8;
+        z-index: -1;
+    }
+
+
+    .footer-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 20rem;
+        padding: 9rem 5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .title-footer {
+        justify-content: start;
+        align-items: center;
+        color: #FAFAFA;
+        font-weight: 900;
+        justify-content: start;
+        font-size: 2rem;
+        text-align: start;
+        padding: 1rem;
+    }
+    
+    footer .p-footer {
+        margin-top: -2rem;
+        color: #FAFAFA;
+        font-weight: 500;
+
+        font-size: 1.2rem;
+        text-align: start;
+        justify-content: start;
+        align-items: center;
+
+    
+    }
+
+
+    footer .v2 {
+        justify-content: start;
+        align-items: center;
+        background-color: #855FB1;
+        margin-top: -1rem;
+        font-size: 1.150rem;
+
+    }
+    
+    footer .v2:hover {
+        background-color: #B18BDD;
+    }
+
+
+}
