@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -523,7 +525,7 @@ footer .version2 {
 
 
     footer .v2 {
-        justify-content: start;
+        justify-content: center;
         align-items: center;
         background-color: #855FB1;
         margin-top: -1rem;
