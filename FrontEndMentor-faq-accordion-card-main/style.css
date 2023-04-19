@@ -152,16 +152,20 @@ button:hover {
 
     .main h1 {
         text-align: center;
+        
     }
 
     .faq {
         margin-top: 40%;
         margin-bottom: 15%;
         width: 87%;
+        font-size: 0.75rem;
+        font-weight: 400;
     }
     
     button {
         width: 100%;
+ 
     }
 
     .images-one img {
@@ -186,6 +190,12 @@ button:hover {
         right: -10%;
         left: -26%;
     }
+
+
+
+
+
+
 
     
 }
