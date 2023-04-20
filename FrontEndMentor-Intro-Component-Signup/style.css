@@ -39,7 +39,7 @@ body::before {
     height: 120vh;
     width: 100%;
     z-index: -1;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .container {
@@ -75,7 +75,7 @@ body::before {
 }
 
 .register {
-    padding: 0px;
+    padding: 20px;
 
 }
 
@@ -88,7 +88,7 @@ body::before {
 
 .register .banner h2 {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -104,6 +104,17 @@ body::before {
     text-align: center;
     margin-top: 1rem;
     border-radius: 10px;
+}
+
+/*  validation */
+
+.has-error {
+    display: block;
+    border: 2px solid var(--red);
+}
+
+.hide {
+    display: none;
 }
 
 
@@ -142,6 +153,10 @@ form .btn-claim {
     margin-bottom: 1rem;
 }
 
+form .btn-claim:hover {
+    opacity: 0.8;
+}
+
 .register-container p {
     width: 100%;
     text-align: center;
@@ -158,6 +173,17 @@ form .btn-claim {
 @media (min-width: 1440px) {
     body {
         position: relative;
+        background-image: url("images/bg-intro-desktop.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        background-blend-mode: normal;
+        position: relative;
+        z-index: 1;
+    }
+
+    body::before {
+
     }
     .container {
         transform: translateY(30%);
