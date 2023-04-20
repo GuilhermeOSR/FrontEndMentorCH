@@ -29,6 +29,10 @@ main {
   
 }
 
+.hide {
+    visibility: hidden;
+}
+
 .container1 {
     width: 30%;
     background-color: var(--darkblue);
@@ -113,9 +117,8 @@ main {
     z-index: -1;
 }
 
-img {
-    border-radius: 0 10px 10px 0;
-    
+.imag {
+    display: none;
    
 }
 
@@ -194,7 +197,7 @@ img {
         border-radius: 0;
         height: 50vh;
         object-fit:fill;
-
+        
     }
 
 

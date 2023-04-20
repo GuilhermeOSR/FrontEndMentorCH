@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --darkblue: hsl(249,10%,26%);
+    --gravishBlue: hsl(246, 25%, 77%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-image: url("images/bg-intro-mobile.png");
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: center;
+    background-blend-mode: normal;
+    position: relative;
+    z-index: 1;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--red);
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.container {
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 100vh;
+    padding: 2rem 0.3rem;
+
+}
+
+
+
+.container .text {
+    padding: 0rem 1rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.container .text h1 {
+    line-height: 2.5rem;
+    font-weight: 700;
+
+    padding-bottom: 1rem;
+}
+
+.container .text p {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem 1.8rem;
+    opacity: 0.9;
+}
+
+.register {
+    padding: 20px;
+
+}
+
+.register .banner {
+   padding: 20px 50px;
+   background-color: var(--blue);
+   border-radius: 10px;
+   color: #fff;
+}
+
+.register .banner h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.register .banner h2 span {
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.register-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 1.25rem;
+    text-align: center;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+
+input {
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border: 1px solid var(--gravishBlue);
+    outline: none;
+
+}
+
+form input[type='text'], input[type='email'], input[type='password']{
+    font-size: 1rem;
+    color: var(--darkblue);
+    font-weight: 600;
+}
+
+form .btn-claim {
+    width: 100%;
+    height: 3.5rem;
+    text-transform: uppercase;
+    background-color: var(--green);
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px var(--green);
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.register-container p {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.register-container p .terms {
+    color: red;
+    font-size: 1rem;
+
+}
+
+
+@media (min-width: 1440px) {
+    body {
+        position: relative;
+    }
+    .container {
+        transform: translateY(30%);
+        flex-direction: row;
+    
+    }
+
+    .container .text {
+        width: 30%;
+        text-align: start;
+        padding-top: 10rem;
+    }
+
+    .container .text h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+
+    }
+
+    
+    .container .text p {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .register {
+        width: 30%;
+    }
+
+    .register-container p {
+        font-size: 0.9rem;
+
+    }
+
+    .register-container p .terms {
+        font-size: 0.9rem;
+    }
+
+
+
+
+}
