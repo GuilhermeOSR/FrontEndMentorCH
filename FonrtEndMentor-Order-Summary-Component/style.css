@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
 
 :root {
     --paleblue: hsl(255, 100%, 94%);
@@ -11,6 +9,7 @@
     --desaturatedblue: hsl(224, 23%, 55%);
     --darkblue: hsl(223, 47%, 23%);
 }
+
 
 body {
     font-family: 'Red Hat Display', sans-serif;
@@ -25,11 +24,13 @@ body {
 
 
 img {
-    border-radius: 20px 20px 0 0;
+    border-radius: 1.25rem 1.25rem 0 0;
+    width: 100%;
+
 }
 
 .card {
-    width: 450px;
+    width: 23%;
     margin: 0 auto;
     max-height: 100vh;
     background-color: #fff;
@@ -37,14 +38,14 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
     transform: translateY(20%);
    
 }
 
 .card .text {
     text-align: center;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .card .text h1 {
@@ -61,7 +62,7 @@ img {
 }
 
 .container .box {
-    padding: 0px 50px 0 50px;
+    padding: 0 3.125rem 0 3.125rem;
   
 
 }
@@ -73,13 +74,13 @@ img {
     background-color: var(--verypaleblue);
     align-items: center;
     gap: 0.2rem;
-    border-radius: 10px 10px;
+    border-radius: 0.625rem 0.625rem;
 
 }
 
 .container .content-box img {
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
     padding: 1rem;
   
 }
@@ -132,8 +133,8 @@ img {
     font-weight: 900;
     padding: 0.8rem;
     border: none;
-    border-radius: 6px;
-    box-shadow: 0px 11px 32px -10px rgb(26, 17, 120);
+    border-radius: 0.375rem;
+    box-shadow: 0rem 0.688rem 2rem -0.625rem rgb(26, 17, 120);
     align-items: center;
 }
 
@@ -157,25 +158,77 @@ img {
     cursor: pointer;
 }
 
+@media (max-width: 1440px) {
+    .card {
+        width: 40%;
+    }
+
+    .card img {
+        width: 100%;
+    }
+}
+
 
 @media (max-width: 500px) {
-    body {
+
+
+    * {
         padding: 0;
         margin: 0;
-        padding: 0rem;
+        box-sizing: border-box;
+    }
+
+    html {
+
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+        padding: 0;
         font-family: 'Red Hat Display', sans-serif;
         background-image: url('images/pattern-background-mobile.svg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         background-color: var(--verypaleblue);
-      
+        transform: translateY(-16%);
     }
 
     .card {
-        transform: translateY(12%);
+        width: 100%;
+        
 
+    }
+
+    .card .text {
+        padding-top: 1rem;
+    }
+
+    .card .text h1 {
+        padding-top: 1rem;
+    }
+
+    .card .text p {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+  
+
+    .container .box .content-box .img-box img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .container .box .content-box .change a {
+        margin-right: 1rem;
     }
 
 
 }
+
