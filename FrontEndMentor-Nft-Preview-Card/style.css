@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --softblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* Neutral */
+    --verydarkblueMain: hsl(178, 100%, 50%);
+    --verydarkblueCard: hsl(216, 50%, 16%);
+    --verydarkblueLine: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{padding: 0; margin: 0; box-sizing: border-box; font-family: 'Outfit', sans-serif;}
+
+body {
+    min-height: 100vh;
+    background-color: #0E182B;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 420px;
+    display: flex;
+    justify-content: center;
+    background-color: #14273E;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0px 30px 43px 24px #0E182B;
+}
+
+
+
+.img-header img {
+
+    width: 360px;
+    height: 360px;
+    border-radius: 15px;
+
+    
+
+}
+
+
+
+
+.content .text h1 {
+    padding: 1rem 0rem;
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.content .text h1:hover {
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.content .text p {
+    color:hsl(215, 51%, 70%);
+    font-weight: 300;
+    opacity: 0.8;
+    width: 80%;
+    padding-bottom: 0.5rem;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+
+.stats {
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.stats .ethereum, .time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+
+.stats .ethereum p, .stats .time p  {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+    color:hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+
+.stats .time p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+
+.stats {
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 1.5rem;
+}
+
+footer .creator {
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-weight: 300;
+}
+
+footer .creator img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+}
+
+footer .creator p {
+    font-size: 1.1rem;
+    color: hsl(215, 51%, 70%); 
+}
+
+footer .creator span {
+    color: var(--white);
+}
+
+footer .creator span:hover {
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+
+}
+
