@@ -136,28 +136,27 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        width: 80%;
-        height: 90vh;
+        width: 100%;
+        min-height: 70vh;
         border-radius: 10px 0px 0px 10px;
     }
 
     .container {
-        width: 1000px;
+        width: 800px;
         flex-direction: row;
         margin: 0 auto;
         justify-content: center;
-    
-        
+
     }
 
     .side-about  {
-        height: 90vh;
-        width: 750px;
+        height: 70vh;
+        width: 650px;
     }
 
     .container .side-about {
         border-radius: 0px 15px 15px 0px;
-        
+   
         margin: 0;
      
     }
@@ -165,13 +164,13 @@ body {
 
     .container .side-about .content {
         border-radius: 10px;
-        padding: 4rem 1rem;
-       
+     
+        
         
     }
 
     .container .side-about .content h1 {
-        padding-top: 2rem;
+
         font-size: 3rem;
         width: 100%;
     
@@ -179,35 +178,36 @@ body {
 
 
     .container .side-about .content h1 {
-        font-size: 4rem;
-        line-height: 3.5rem;
+        width: 100%;
+        font-size: 3rem;
+        line-height: 3rem;
         font-weight: 700;
         
     }
 
     .container .side-about .content p {
         width: 100%;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        font-size: 1.4rem;
+        padding-top: 1rem;
+        font-size: 1.1rem;
         line-height: 1.5;
         padding-right: 1rem;
     }
 
     .container .side-about .content .price {
-        padding: 0.5rem 0rem;
+        padding: 1rem 0rem;
         gap: 2rem;
     }
 
     .container .side-about .content .price h2 {
-        font-size: 3rem;
+        font-size: 2.7rem;
       
     }
 
 
     .container .side-about .content button.btn {
         width: 90%;
-        margin-top: 2rem;
+        
+        
     }
     
 }
