@@ -23,6 +23,7 @@
 body {
     color: var(--white);
     font-family: 'Overpass', sans-serif;
+    background-color: hsl(213, 17%, 13%);
 }
     
 .container {
