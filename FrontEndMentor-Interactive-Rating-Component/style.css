@@ -18,6 +18,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* This removes highlight color in mobile*/
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 body {
@@ -81,7 +84,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-
+   
     
 }
 
