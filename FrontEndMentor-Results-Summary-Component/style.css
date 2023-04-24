@@ -34,16 +34,17 @@ html {
 
 body {
     font-family: 'Hanken Grotesk', sans-serif;
+    
 }
 
 .card {
-    width: 100%;
+    max-width: 100%;
     max-height: 100vh;
 
 }
 
 .container  {
-   width: 100%;
+   max-width: 100%;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -56,16 +57,17 @@ body {
 
 
 .container header.content-top {
-    width: 100%;
-    padding: 2rem;
+    max-width: 100%;
+
     background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-    border-radius: 0px 0px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
 }
 
-.container header.content-top h1 {
+.container header.content-top .your-result h1 {
     font-size: 1.5rem;
     color: var(--lightlavender);
     text-align: center;
+    padding-top: 2rem;
     
 }
 
@@ -73,7 +75,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 3rem;
+    padding-top: 0em;
 }
 
 .content-top .main-rating p {
@@ -85,6 +87,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 2rem;
 }
 
 .content-top .main-rating p:before{
@@ -105,6 +108,7 @@ body {
     opacity: 0.6;
     padding-top: 0.4rem;
     word-spacing: 0.1rem;
+    
 }
 
 .content-top .text {
@@ -122,7 +126,8 @@ body {
 }
 
 .content-top .text p {
-    padding: 1rem 4rem;
+    padding: 0.5rem 3rem;
+    padding-bottom: 2rem;
     color: var(--lightlavender);
 }
 
@@ -130,7 +135,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 1rem 2rem;
     background-color: var(--white);
     height: 100vh;
 
@@ -138,15 +143,16 @@ body {
 
 .content-summary h3 {
     font-weight: 800;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    color: var(--darkgrayblue);
 }
 
 .itens-summary {
-    padding-top: 1rem;
+    padding-top: 0.2rem;
 }
 
 .itens-summary ul li {
-    padding: 1.5rem 1rem;
+    padding: 1.1rem 1rem;
 }
 
 
@@ -173,10 +179,26 @@ li.verbal,
 li.visual {
     background-color: hsla(0, 100%, 67%, 0.04);
     color: hsl(0, 100%, 67%);
-    border-radius: 10px;
     font-weight: 600;
     font-size: 1.1rem;
     margin-top: 1rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.itens-summary li::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: inherit;
+    padding: 2px;
+    border-radius: 10px;
+    -webkit-mask:
+      linear-gradient(  0deg,#000 calc(2*2px),#0000 0) 50% 2px/calc(100% - 2*10px) 100% repeat-y,
+      linear-gradient(-90deg,#000 calc(2*2px),#0000 0) 2px 50%/100% calc(100% - 2*10px) repeat-x,
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+      -webkit-mask-composite: destination-out;
 }
 
 .itens-summary li p img {
@@ -212,5 +234,85 @@ li.visual {
 
 strong {
     opacity: 0.5;
+
+}
+
+.content-summary .btn-continue {
+    padding: 0.7rem 0rem;
+}
+
+.btn-cont {
+    width: 100%;
+    font-size: 1.2rem;
+    height: 65px;
+    border-radius: 50px;
+    font-weight: 600;
+    background-color: var(--darkgrayblue);
+    color: var(--white);
+    border: none;
+    transition: .3s;
+}
+
+.btn-cont:hover {
+    background-color: var(--cobaltblue);
+    cursor: pointer;
+}
+
+
+@media (min-width: 600px) {
+
+
+    .card {
+        padding: 0;
+        margin: 0;
+        box-shadow: 12px 2px 12px 4px blue;
+    }
+
+    
+    .container {
+        border-radius: 15px;
+        flex-direction: row;
+        
+    }
+
+    .content-top {
+        padding-top: 1rem;
+        height: 60vh;
+        z-index: 1;
+        width: 40%;
+
+    }
+
+
+    .content-summary {
+        height: 60vh;
+        width: 50%;
+        box-shadow: 2px 0px 20px 5px var(--paleblue);
+        z-index: -1;
+        padding: 3rem 2rem 0rem 4rem;
+        margin-left: -2rem;
+        border-radius: 10px 50px 50px 10px;
+    }
+
+    .content-top .main-rating {
+        padding-top: 2rem;
+        
+    }
+
+    .content-top .main-rating p::before {
+        width: 190px;
+        height:190px;
+    }
+
+    .content-top .text {
+        padding-top: 5rem;
+    }
+
+    .content-top .text h2 {
+        padding-bottom: 1rem;
+    }
+    
+
+
 
 }
