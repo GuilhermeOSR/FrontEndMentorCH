@@ -1,6 +1,7 @@
 const inputEmail = document.getElementById('emailInput');
 const btnNotify = document.getElementById('notify');
 const hasError = document.getElementById('error-div');
+const hasErrorMob = document.getElementById('error-div-mobile');
 
 btnNotify.addEventListener('click', () => {
     const email = inputEmail.value; 
