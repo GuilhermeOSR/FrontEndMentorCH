@@ -24,13 +24,13 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 2rem 3.4rem;
+    padding: 2rem 5rem;
     align-items: start;
     justify-self: center;
 }
 
 .menu .logo img {
-    width: 60%;
+    width: 70%;
     max-height: 100vh;
 }
 
@@ -38,11 +38,11 @@ header .content-img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5rem 0rem 0rem 0.5rem;
+    padding: 3rem 0rem 0rem 0.5rem;
 }
 
 header .content-img img {
-    width: 100%;
+    width: 90%;
 }
 
 .container .content {
@@ -51,7 +51,7 @@ header .content-img img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 2rem 5rem;
+    padding: 0rem 5rem;
     max-height: 100vh;
 
 }
@@ -67,8 +67,7 @@ header .content-img img {
     color: #fff;
     width: 100%;
     line-height: 1.7rem;
-    font-size: 1rem;
-    padding: 0.3rem;
+    font-size: 0.9rem;
     
 }
 
