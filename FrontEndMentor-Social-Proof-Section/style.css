@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+    verydarkMagenta: hsl(300, 43%, 22%);
+    softpink: hsl(333, 80%, 67%);
+
+    /* neutral */
+
+    --darkgrayishMagenta: hsl(303, 10%, 53%);
+    --lightgrayishMagenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    background-image: url('images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+
+}
+
+
+.container {
+    max-width: 1440px;
+    max-height: 100vh;
+    margin: 5% auto;
+    
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0rem 1rem;
+}
+
+.content .content-text h1 {
+    width: 40%;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color:hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+.content .content-text p {
+    width: 44%;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color:hsl(303, 10%, 53%);
+    font-weight: 400;
+}
+
+
+.content-rating {
+    max-width: 1440px;
+    max-height: 100vh;
+}
+
+.content-rating ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+.content-rating ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    place-items: center;
+    list-style: none;
+    background-color: hsl(300, 24%, 96%);
+    width: 100%;
+    height: 5vh;
+    margin-top: 1rem;
+    padding: 0rem 2rem;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    color:hsl(300, 43%, 22%);
+    font-weight: 700;
+    
+}
+
+.content-rating ul li:first-child {
+    position: relative;
+    right: 25%;
+    
+}
+
+.content-rating ul li.mid {
+    position: relative;
+    right: 15%;
+    gap: 0.5rem;
+    
+}
+
+
+.content-rating ul li .star {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.depoiments {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.depoiments .card{
+    width: 30%;
+    height: 30vh;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    background-color:hsl(300, 43%, 22%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    color: #fff;
+    position: relative;
+}
+
+.depoiments .card .card-content {
+    padding: 1rem;
+}
+
+.depoiments .card .card-content h2 {
+    font-size: 1rem;
+}
+
+
+
+.depoiments .card .card-content h3 {
+    color:hsl(333, 80%, 67%);
+    font-size: 1rem;
+    padding-top: 0.3rem;
+    opacity: 0.8;
+}
+
+.depoiments .card .card-content p {
+    padding-top: 1.5rem;
+    color:hsl(300, 24%, 96%);
+    max-width: 90%;
+    line-height: 1.5rem;
+   
+}
+
+.depoiments .card .profile-img {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    justify-content:first baseline;
+    gap: 1em;
+    align-items: center;
+}
+
+.depoiments .card .profile-img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.depoiments .card:first-child {
+    position: relative;
+    bottom: 2%;
+}
+
+.depoiments .card:last-child {
+    position: relative;
+    bottom: -2%;
+}
+
+/* mobile */
+@media (max-width: 500px) {
+
+    body {
+        font-family: 'League Spartan', sans-serif;
+        background-image: url('images/bg-pattern-top-mobile.svg'), url('images/bg-pattern-bottom-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: auto, cover;
+    }
+
+    .container {
+        max-width: 100%;
+        max-height: 100%;
+        padding: 2rem;
+
+    }
+
+    .container .content {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .content .content-text h1 {
+        display: flex;
+        font-size: 3rem;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .container .content .content-text {
+        padding-right: -4rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .content .content-text p {
+        text-align: center;
+        font-size: 1.3rem;
+        line-height: 1.2;
+        width: 100%;
+        padding-bottom: 1rem;
+        max-height: 100vh;
+    }
+
+
+    .content-rating {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+    .content-rating {
+       width: 100%;
+        
+    }
+    
+    .content-rating ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+    }
+    
+    .content-rating ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        place-items: center;
+        list-style: none;
+        background-color: hsl(300, 24%, 96%);
+        width: 100%;
+        height: 6vh;
+        font-size: 1rem;
+        border-radius: 10px;
+        color:hsl(300, 43%, 22%);
+        font-weight: 700;
+        
+    }
+    
+    .content-rating ul li:first-child {
+        position: relative;
+        right: 0%;
+        
+    }
+    
+    .content-rating ul li.mid {
+        position: relative;
+        right: 0%;
+        gap: 0.5rem;
+    }
+    
+    
+    .content-rating ul li .star {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+
+    .depoiments {
+        width: 100%;
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+        position: relative;
+        height: 100vh;
+    }
+
+    .depoiments .card{
+        width: 100%;
+        height: 30vh;
+        margin-right: 2rem;
+        margin-top: 1rem;
+        background-color:hsl(300, 43%, 22%);
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        color: #fff;
+        position: relative;
+        padding-left: 1rem;
+    }
+
+  
+    
+}
