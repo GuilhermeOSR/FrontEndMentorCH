@@ -121,7 +121,7 @@ section {
 
 .card img {
     position: relative;
-    top: 30%;
+    top: 10%;
     left: 80%;
 }
 
@@ -191,5 +191,11 @@ section {
     
     }
 
+    .card img {
+        position: relative;
+        top: 20%;
+        left: 80%;
+    }
+    
 }
 
