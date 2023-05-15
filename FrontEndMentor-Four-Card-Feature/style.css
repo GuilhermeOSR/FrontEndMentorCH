@@ -76,7 +76,6 @@ section {
 }
 
 .card {
-
     background-color: #fff;
     box-shadow: 0px 10px 10px 1px #DAE0E9;
     padding: 1rem 1rem 2rem 1rem;
@@ -115,6 +114,10 @@ section {
 
 .content-card {
     padding: 0rem 2rem;
+}
+
+.content-card h2 {
+    color: var(--verydarkblue);
 }
 
 .content-card p {
