@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--Black, #141414);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.card {
+    width:384px;
+    border-radius: 12px;
+    height: 611px;  
+    background: var(--Dark-Grey, #1F1F1F);
+    padding: 40px;
+}
+
+.card .card-header .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .card-header .profile img {
+    width: 88px;
+    height: 88px;
+    border-radius: 999px;
+    margin-bottom: 24px;
+}
+
+.card .card-header .profile h1 {
+    color: var(--White, var(--White, #FFF));
+    font-size: 24px;
+    margin-bottom: 4px;
+    font-weight: 600;   
+}
+
+.card .card-header .profile h2 {
+   color: #C4F82A;
+   font-size: 14px;
+   margin-top: 4px;
+   font-weight: 700;
+}
+
+.card .card-header p {
+    margin-top: 24px;
+    color: #fff;
+    max-width: 100%;
+ 
+}
+
+.card .social-list {
+    margin-top: 34px;
+}
+
+.card .social-list ul {
+    margin-bottom: 16px;
+
+}
+
+.card .social-list ul li {
+    list-style: none;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    background: var(--Grey, #333);
+    margin-top: 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.card .social-list ul li:hover {
+    background-color: #C4F82A;
+    color: #333333;
+}
+
